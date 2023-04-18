@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>西子的餐厅菜单</title>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+</style>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* 设置页面背景色 */
+  }
+
+  .navbar {
+    background-color: #ffffff; /* 设置导航栏背景色 */
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #ddd; /* 设置导航栏底边框 */
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: font-size 0.3s ease-in-out;
+    /* 添加字体大小的过渡效果 */
+    font-weight: bold; /* 设置导航栏链接字体加粗 */
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    font-size: 18px;
+    /* 鼠标悬停时字体大小变大 */
+  }
+
+  .menu-container {
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .menu-item {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 设置菜单项的阴影效果 */
+  }
+
+  h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.6;
+  }
+
+  img {
+    max-width: 100%; /* 设置图片宽度不超过容器 */
+    height: auto; /* 设置图片高度自适应 */
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  body {
+    overflow-x: hidden; /* 隐藏水平滚动条 */
+    overflow-y: hidden; /* 隐藏垂直滚动条 */
+  }
+  .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #f2f2f2;
+  border: none;
+  color: #333;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  transform-origin: top;
+}
+
+.dropdown:hover .dropdown-content {
+  max-height: 200px;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #333;
+  padding: 5px;
+  font-size: 14px;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content a:active {
+  font-size: 12px;
+}
+#qrcode {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  max-width: 50%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+</style>
+  </style>
+</head>
+<body>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>餐厅菜单</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .navbar {
+        background-color: #f8f8f8;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+  
+      .navbar a {
+        float: left;
+        display: block;
+        color: #000;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: font-size 0.3s ease-in-out; /* 添加字体大小的过渡效果 */
+      }
+  
+      .navbar a:hover {
+        background-color: #ddd;
+        font-size: 18px; /* 鼠标悬停时字体大小变大 */
+      }
+  
+      .menu-container {
+        margin-top: 50px;
+        padding: 20px;
+      }
+  
+      .menu-item {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>   
+    <div class="navbar">
+      <a href="#appetizers">开胃菜</a>
+      <a href="#main-courses">主菜</a>
+      <a href="#cakes">蛋糕</a>
+    </div>
+  
+    <div class="menu-container">
+      <div id="appetizers" class="menu-item">
+        <h2>开胃菜（5$）</h2>
+        <p>蘑菇炖汤：新鲜蘑菇与香浓鸡汤炖煮，口感鲜美，温暖胃口。</p>
+        <img src="https://th.bing.com/th/id/R.d882e42c0a82947ac60756c14656b14b?rik=iPemEDZkJOxtQQ&pid=ImgRaw&r=0" alt="蘑菇炖汤"width="500" height="500">
+      </div>
+      <div id="main-courses" class="menu-item">
+        <h2>主菜（10$）</h2>
+        <p>香煎三文鱼：新鲜三文鱼在平底锅中煎至外酥内嫩，搭配柠檬奶油酱，口味鲜美。</p>
+        <img src="https://th.bing.com/th/id/R.db7f4795661a08bfbfef76530debd9a7?rik=ACi9E9XVduH7iA&riu=http%3a%2f%2fi3.meishichina.com%2fattachment%2frecipe%2f2015%2f05%2f10%2f555F4A05-807C-45C9-A3BA-81BE23FBBA88.jpg%40!p800&ehk=NtSxzdqbMo7tWmOcZf5c0R7fBKUSMUL8d0hD7LZXYG4%3d&risl=&pid=ImgRaw&r=0" alt="香煎三文鱼"width="500" height="500">
+      </div>
+      <div id="cakes" class="menu-item">
+        <h2>蛋糕（8$）</h2>
+        <p>招牌提拉米苏：经典的意大利甜品，以咖啡浸泡的饼干和丝滑的马斯卡彭芝士层层叠加，入口滋味丰富。</p>
+        <img src="https://img.zcool.cn/community/01474a5de37a2ca8012159720e68bd.jpg@1280w_1l_2o_100sh.jpg" alt="招牌提拉米苏蛋糕"width="500" height="500">
+        <img src="qrcode.png" alt="QR Code" id="qrcode">
+      </div>
+    </div>
+  
+    <script>
+      // 跳转到指定菜单模块时，滚动页面以展示内容
+      function scrollToMenu(id) {
+        var element = document.getElementById(id);
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+  
+      // 绑定导航栏链接点击事件
+      var navbarLinks = document.querySelectorAll('.navbar a');
+      navbarLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+          var targetId = link.getAttribute('href').substring(1);
+          scrollToMenu(targetId);
+        });
+      });
+      <div class="dropdown">
+  <button class="dropdown-btn">下拉菜单</button>
+  <div class="dropdown-content">
+    <a href="#">选项1</a>
+    <a href="#">选项2</a>
+    <a href="#">选项3</a>
+  </div>
+</div>
+    </script>
+  </body>
+  </html>
+</body>
+</html>
